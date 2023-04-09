@@ -7,6 +7,8 @@ if (!localStorage.getItem('user')) {
 logOutBtn.addEventListener('click', () => {
   localStorage.removeItem('user');
   location.replace('signup.html');
+  localStorage.removeItem("ball")
+  localStorage.removeItem("time")
 });
 
 const gameCategoryEasy = () => {
