@@ -1,0 +1,11 @@
+.start {
+     display: none;
+}
+.start.active {
+     background-color: red;
+     position: fixed;
+     inset: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
