@@ -28,16 +28,60 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 400px;
+  width: 480px;
   margin-top: 40px;
 }
 
 .records__max-time {
   font-size: 25px;
-  color: #FF1E1E;
+  color: #ff1e1e;
 }
 
 .records__ball {
   font-size: 25px;
-  color: #367E18;
+  color: #367e18;
+}
+
+.records__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restart__link {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 15px 25px;
+  text-align: center;
+  background-color: #645caa;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+    background-color: #00ffd1;
+    color: #6b6b6b;
+  }
+}
+
+.main-page-link {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 15px 25px;
+  text-align: center;
+  background-color: #00ffd1;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  color: #6b6b6b;
+  
+  &:hover {
+    transform: scale(1.2);
+    background-color: #645caa;
+    color: #fff;
+  }
 }

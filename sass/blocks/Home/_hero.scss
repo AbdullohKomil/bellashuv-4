@@ -18,9 +18,19 @@
   }
 
   h1 {
+    margin: 0 0 20px;
     font-size: 60px;
     color: #f8f988;
     animation-name: titleAnimate;
+    animation-duration: 3s;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #1746a2;
+    line-height: 26px;
+    animation-name: descAnimate;
     animation-duration: 3s;
   }
 
@@ -38,7 +48,7 @@
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      transform: rotateZ(8deg) scale(1.2);
+      transform: rotateZ(5deg) scale(1.1);
     }
   }
 }
@@ -86,3 +96,19 @@
 }
 
 // Button animate
+
+// Description animate
+
+@keyframes descAnimate {
+  from {
+    transform: translateY(-130%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+// Description animate

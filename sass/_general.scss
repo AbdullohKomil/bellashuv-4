@@ -69,3 +69,9 @@ a {
 p {
   margin: 0;
 }
+
+::selection {
+  background-color: #ffffff73;
+  color: #0b4d4d68;
+  mix-blend-mode: multiply;
+}

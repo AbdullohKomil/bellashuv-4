@@ -93,7 +93,6 @@ setInterval(() => {
   time.innerHTML = count;
   if (foundedIds.length == findedElements) {
     findedElements++;
-    count = count + 12;
 
     if (foundedIds.length == scoreCount) {
       scoreCount++;
@@ -114,13 +113,12 @@ startEl.onclick = (e) => {
   }
 
   let time = setInterval(() => {
-    if (foundedIds.length === lastFoundedIds) {
       const end = Date.now();
 
       localStorage.setItem('ball', foundedIds.length);
       localStorage.setItem('time', end - beginning);
       window.location.replace('/records.html');
-    }
+    
     lastFoundedIds = foundedIds.length;
   }, 12000);
 };
