@@ -1,0 +1,84 @@
+.hero {
+  padding: 30px 0;
+
+  .hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  img {
+    animation-name: imgAnimate;
+    animation-duration: 1.5s;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 60px;
+    color: #f8f988;
+    animation-name: titleAnimate;
+    animation-duration: 3s;
+  }
+
+  a {
+    display: inline-block;
+    padding: 15px 20px 13px;
+    font-size: 25px;
+    border: 0;
+    background-color: #00ffd1;
+    border-radius: 10px;
+    color: #ff1e1e;
+    cursor: pointer;
+    animation-name: buttonAnimate;
+    animation-duration: 2s;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: rotateZ(8deg) scale(1.2);
+    }
+  }
+}
+
+// Img animate
+
+@keyframes imgAnimate {
+  0% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+// Img animate
+
+// Title animate
+
+@keyframes titleAnimate {
+  from {
+    transform: translateX(130%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+// Title animate
+
+// Button animate
+
+@keyframes buttonAnimate {
+  from {
+    transform: translateY(160%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+// Button animate
