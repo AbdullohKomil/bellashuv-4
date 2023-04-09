@@ -2,6 +2,20 @@
   position: absolute;
   top: 300px;
   right: calc(50% - 300px);
+  animation-name: userData;
+  animation-duration: 3s;
+}
+
+@keyframes userData {
+  from {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .records__user-name {
