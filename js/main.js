@@ -6,17 +6,20 @@ if (!localStorage.getItem('user')) {
 
 logOutBtn.addEventListener('click', () => {
   localStorage.removeItem('user');
-  location.replace('signup.html')
+  location.replace('signup.html');
 });
 
 const gameCategoryEasy = () => {
   localStorage.setItem('gameCategory', 'easy');
+  window.location = '/game.html';
 };
 
 const gameCategoryMedium = () => {
   localStorage.setItem('gameCategory', 'medium');
+  window.location = '/game.html';
 };
 
 const gameCategoryHard = () => {
   localStorage.setItem('gameCategory', 'hard');
+  window.location = '/game.html';
 };

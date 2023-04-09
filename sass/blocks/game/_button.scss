@@ -138,8 +138,24 @@
 // }
 
 button.button3d {
-     background-color: red;
-     &.active {
-          background-color: green;
-     }
+  background-color: #E21818;
+  border: none;
+  padding: 10px 5px;
+  color: #fff;
+  border-radius: 10px;
+
+
+  &.active {
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #FFB84C;
+  }
+}
+
+.time {
+     position: absolute;
+     bottom: 20px;
+     font-size: 30px;
+     left: 50%;background-clip: text;
+     background-image: linear-gradient(to right, #ff0000, #00ff00);
 }

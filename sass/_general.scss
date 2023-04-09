@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  
+
   font-family: 'Arial', sans-serif;
 }
 
@@ -29,6 +29,20 @@ body {
     rgba(219, 10, 10, 1) 17%,
     rgba(255, 76, 0, 1) 50%,
     rgba(255, 0, 108, 1) 95%
+  );
+}
+
+.game-page {
+  overflow: hidden;
+}
+
+.records-page {
+  padding-top: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 235, 0, 1) 0%,
+    rgba(255, 171, 0, 0.9977240896358543) 38%,
+    rgba(219, 10, 10, 0.726015406162465) 95%
   );
 }
 

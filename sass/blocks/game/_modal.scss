@@ -1,0 +1,18 @@
+.modal {
+  position: absolute;
+  top: 30px;
+  right: calc(50% - 300px);
+  width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: block;
+  translate: -250%;
+  transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
+
+  p {
+    font-size: 30px;
+    text-align: center;
+    color: #38e54d;
+  }
+}

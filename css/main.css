@@ -336,6 +336,15 @@ body {
   background: linear-gradient(90deg, rgb(219, 10, 10) 17%, rgb(255, 76, 0) 50%, rgb(255, 0, 108) 95%);
 }
 
+.game-page {
+  overflow: hidden;
+}
+
+.records-page {
+  padding-top: 100px;
+  background: linear-gradient(90deg, rgb(255, 235, 0) 0%, rgba(255, 171, 0, 0.9977240896) 38%, rgba(219, 10, 10, 0.7260154062) 95%);
+}
+
 main {
   flex-grow: 1;
 }
@@ -398,7 +407,7 @@ p {
 }
 
 .site-header__inner .logo-box:hover a {
-  transform: rotateZ(-10deg) scale(1.2);
+  transform: scale(1.1);
 }
 .site-header__inner a {
   display: block;
@@ -417,6 +426,18 @@ p {
 }
 .site-header__inner button:hover {
   transform: scale(1.2) rotateZ(5deg);
+}
+
+.site-header__content {
+  display: flex;
+  align-items: center;
+}
+.site-header__content a {
+  margin-right: 20px;
+  font-size: 25px !important;
+}
+.site-header__content a:hover {
+  transform: scale(1.1);
 }
 
 .main-page {
@@ -725,4 +746,255 @@ html {
   align-items: center;
   justify-content: center;
   width: 50%;
+}
+
+button.button3d {
+  background-color: #E21818;
+  border: none;
+  padding: 10px 5px;
+  color: #fff;
+  border-radius: 10px;
+}
+button.button3d.active {
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #FFB84C;
+}
+
+.time {
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+  left: 50%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(to right, #ff0000, #00ff00);
+}
+
+.word-buttons-container {
+  background-color: transparent;
+}
+.word-buttons-container .buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+.word-buttons-container .buttons-container button {
+  position: absolute;
+  font-size: 20px;
+  cursor: pointer;
+}
+.word-buttons-container .buttons-container button:nth-child(1) {
+  transform: rotateZ(-30deg);
+  top: 100px;
+  left: 200px;
+}
+.word-buttons-container .buttons-container button:nth-child(2) {
+  top: 400px;
+  transform: rotateZ(20deg);
+  left: 300px;
+}
+.word-buttons-container .buttons-container button:nth-child(3) {
+  top: 350px;
+  transform: rotateZ(-5deg);
+  right: 200px;
+}
+.word-buttons-container .buttons-container button:nth-child(4) {
+  top: 150px;
+  transform: rotateZ(20deg);
+  left: 500px;
+}
+.word-buttons-container .buttons-container button:nth-child(5) {
+  top: 550px;
+  transform: rotateZ(-50deg);
+  right: 400px;
+}
+.word-buttons-container .buttons-container button:nth-child(6) {
+  top: 600px;
+  transform: rotateZ(-5deg);
+  right: 800px;
+}
+.word-buttons-container .buttons-container button:nth-child(7) {
+  bottom: 350px;
+  transform: rotateZ(-25deg);
+  left: 500px;
+}
+.word-buttons-container .buttons-container button:nth-child(8) {
+  top: 150px;
+  transform: rotateZ(-5deg);
+  right: 350px;
+}
+.word-buttons-container .buttons-container button:nth-child(9) {
+  top: 50px;
+  transform: rotateZ(-5deg);
+  right: 600px;
+}
+.word-buttons-container .buttons-container button:nth-child(9) {
+  top: 300px;
+  transform: rotateZ(15deg);
+  right: 500px;
+}
+.word-buttons-container .buttons-container button:nth-child(10) {
+  top: 550px;
+  transform: rotateZ(-5deg);
+  right: 30px;
+}
+.word-buttons-container .buttons-container button:nth-child(11) {
+  bottom: 150px;
+  transform: rotateZ(-37deg);
+  left: 20px;
+}
+.word-buttons-container .buttons-container button:nth-child(11) {
+  bottom: 150px;
+  transform: rotateZ(37deg);
+  left: 250px;
+}
+.word-buttons-container .buttons-container button:nth-child(12) {
+  bottom: 150px;
+  transform: rotateZ(-37deg);
+  left: 20px;
+}
+.word-buttons-container .buttons-container button:nth-child(13) {
+  top: 50px;
+  transform: rotateZ(17deg);
+  right: 20px;
+}
+.word-buttons-container .buttons-container button:nth-child(14) {
+  top: 50px;
+  transform: rotateZ(5deg);
+  right: 600px;
+}
+.word-buttons-container .buttons-container button:nth-child(15) {
+  bottom: 350px;
+  transform: rotateZ(-37deg);
+  right: 670px;
+}
+.word-buttons-container .buttons-container button:nth-child(16) {
+  top: 350px;
+  transform: rotateZ(-37deg);
+  left: 10px;
+}
+.word-buttons-container .buttons-container button:nth-child(17) {
+  top: 460px;
+  transform: rotateZ(37deg);
+  left: 800px;
+}
+.word-buttons-container .buttons-container button:nth-child(18) {
+  top: 200px;
+  transform: rotateZ(-37deg);
+  left: 300px;
+}
+.word-buttons-container .buttons-container button:nth-child(19) {
+  top: 130px;
+  transform: rotateZ(-3deg);
+  left: 700px;
+}
+.word-buttons-container .buttons-container button:nth-child(20) {
+  top: 30px;
+  transform: rotateZ(-17deg);
+  left: 20px;
+}
+
+.modal {
+  position: absolute;
+  top: 30px;
+  right: calc(50% - 300px);
+  width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: block;
+  translate: -250%;
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.modal p {
+  font-size: 30px;
+  text-align: center;
+  color: #38e54d;
+}
+
+.start {
+  display: none;
+}
+
+.start.active {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, rgb(0, 255, 64) 0%, rgb(255, 4, 0) 25%, yellow 51%, #ff357f 100%);
+  animation: AnimateBG 10s ease infinite;
+}
+.start.active button {
+  padding: 15px 25px 12px;
+  background-color: #7fe9de;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  animation-name: buttonAnimate;
+  animation-duration: 1.5s;
+  cursor: pointer;
+}
+
+@keyframes buttonAnimate {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.records {
+  position: absolute;
+  top: 300px;
+  right: calc(50% - 300px);
+}
+
+.records__user-name {
+  margin-top: 30px;
+  font-size: 50px;
+  color: #6b6b6b;
+}
+
+.records__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 40px;
+}
+
+.records__max-time {
+  font-size: 25px;
+  color: #FF1E1E;
+}
+
+.records__ball {
+  font-size: 25px;
+  color: #367E18;
 }/*# sourceMappingURL=main.css.map */

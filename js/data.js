@@ -10,7 +10,7 @@ export const words = {
     },
     {
       en: "cat",
-      uz: "mux",
+      uz: "mushuk",
     },
     {
       en: "book",

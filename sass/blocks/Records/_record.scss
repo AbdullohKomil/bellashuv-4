@@ -1,0 +1,29 @@
+.records {
+  position: absolute;
+  top: 300px;
+  right: calc(50% - 300px);
+}
+
+.records__user-name {
+  margin-top: 30px;
+  font-size: 50px;
+  color: #6b6b6b;
+}
+
+.records__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 40px;
+}
+
+.records__max-time {
+  font-size: 25px;
+  color: #FF1E1E;
+}
+
+.records__ball {
+  font-size: 25px;
+  color: #367E18;
+}
