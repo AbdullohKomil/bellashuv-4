@@ -1,0 +1,116 @@
+html {
+  overflow-x: hidden;
+}
+
+.signup {
+  background: radial-gradient(circle at left, #3494e6, #ee4597);
+}
+
+.signup_bg {
+  background-image: url('../images/signup-Bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 50%;
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.signup__inner {
+  display: flex;
+}
+.signup__title {
+  font-style: normal;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 51px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.signup__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.signup__input {
+  padding: 16px 187px 16px 10px;
+  border: 1px solid #b4b4bb;
+  border-radius: 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+@keyframes animatsiya_input {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.name__input {
+  animation-name: animatsiya_input;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.surname__input {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  animation-name: animatsiya_input;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.phone__input {
+  animation-name: animatsiya_input;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.email__input {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  animation-name: animatsiya_input;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.password__input{
+  animation-name: animatsiya_input;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.submit__btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #ff5733, #ffc300);
+  font-size: 20px;
+  color: #fff;
+}
+
+.signup__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
